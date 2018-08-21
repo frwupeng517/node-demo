@@ -1,0 +1,20 @@
+//- ********* 嵌入的Javascript代码必须以"-"开头
+//- html
+//-   body
+//-     - for(var i = 0; i < 3; i++) 
+//-         div This is div element
+//- <html>
+//-   <body>
+//-     <div>This is div element</div>
+//-     <div>This is div element</div>
+//-     <div>This is div element</div>
+//-   </body>
+//- </html>
+
+//- ********* 至于多行Javascript代码，可以让"-" 独占一行，且Javascript 缩进 书写
+html
+  body
+    -
+      var n = 3;
+      for(var i = 0; i < n; i++) 
+          div this is div element

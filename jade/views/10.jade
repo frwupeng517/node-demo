@@ -1,0 +1,32 @@
+html
+  head
+  body
+    //- a(href="https://www.baidu.com") Baidu If you think you can, you can
+    //- <a href="https://www.baidu.com">Baidu If you think you can, you can</a>
+
+    //- a(href="https://www.baidu.com") Baidu
+    //-   If you think you can, you can
+    //- <a href="https://www.baidu.com">Baidu
+    //-   <If>you think you can, you can</If></a>
+
+    //- *********** Jade的特殊字符“竖线”（｜）
+    //- *********** "|"告诉Jade模板解析器：讲后面的内容原样输出。因此，"|"后面也可以包含html元素
+    //- | this is HTML element, <a href="https://www.baidu.com">百度</a>
+    //- this is HTML element, <a href="https://www.baidu.com">百度</a>
+
+    //- *********** 需要注意的是，"|"的作用域只有一行，如果需要原样输出多行文本，则要用到Jade的另一个字符"."
+    //- *********** "." 一般用在填充<style>或<script>元素包含的内容
+    //- script(type="text/javascript").
+    //-   window.onload=function(){
+    //-     console.log('hello jade')
+    //-   }
+    //- <script type="text/javascript">
+    //-   window.onload=function(){
+    //-     console.log('hello jade')
+    //-   }
+    //- </script>
+
+    //- *********** 如果希望在一段纯文本中插入Jade语句，则需要引入"#[]"语法：
+    div.
+      My name is #[b Roger]
+    //- <div>My name is <b>Roger</b></div>

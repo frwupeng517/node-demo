@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- TODO <% %> '脚本'标签，用于流程控制，无输出 -->
+
+  <% for(var i = 0; i < json.arr.length; i++) { %>
+    
+    <h2>姓名：<%= json.arr[i].user %>，性别：<%= json.arr[i].gender %></h2>
+
+  <% } %>
+
+  <!-- <h2>姓名：roger，性别：male</h2>
+  <h2>姓名：sara，性别：female</h2> -->
+  
+</body>
+</html>

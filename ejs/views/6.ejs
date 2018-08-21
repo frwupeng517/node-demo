@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <%# 这才是正儿八经的注释标签，不执行，不输出内容 %>
+  <% if(flag == 'common'){ %>
+  <% include ../style/common.css %>
+  <% }else{ %>
+  <% include ../style/base.css %>
+  <% }%>
+
+  <%# div{width: 200px;} %>
+</body>
+</html>

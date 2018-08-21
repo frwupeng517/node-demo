@@ -1,0 +1,39 @@
+//- html
+//-   head
+//-   body
+//-     -var a = 1
+//-     switch a
+//-       case 0
+//-         div 000
+//-         break
+//-       case 1
+//-         div 111
+//-         break
+//-       case 2
+//-         div 222
+//-         break
+//-       default
+//-         | 不存在
+
+//- 以上写法报错
+
+html
+  head
+  body
+    -var a = 1
+    case a
+      when 0
+        div 000
+      when 1
+        div 111
+      when 2
+        div 222
+      default
+        | 不存在
+
+//- <html>
+//-   <head></head>
+//-   <body>
+//-     <div>111</div>
+//-   </body>
+//- </html>

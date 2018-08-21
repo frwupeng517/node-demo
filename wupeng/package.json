@@ -1,0 +1,24 @@
+{
+  "name": "wupeng123",
+  "version": "0.1.2",
+  "description": "a simple demo to test how to publish module onto npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frwupeng517/myfirst-wechat-project.git"
+  },
+  "keywords": [
+    "wupeng",
+    "wu",
+    "peng"
+  ],
+  "author": "wupeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frwupeng517/myfirst-wechat-project/issues"
+  },
+  "homepage": "https://github.com/frwupeng517/myfirst-wechat-project#readme"
+}
